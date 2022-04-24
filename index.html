@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+
+    <div class="title">
+        <h1>Mrs. Smith's class room</h1>
+    
+    </div>
+
+    <div class="form">
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+    <input type="text" id="add-todo" placeholder=" Enter Name">
+    <input type="submit" value="Add" class="btn btn-primary">
+    </form>
+    
+    <p id="counter"></p>
+
+    <table>
+    <tr class="to-do">
+        <th><h3>Student's Name:</h3></th>
+    </tr>
+        <tbody id="tasks">
+        </tbody>
+    </table>
+</div>
+
+<div id="edit-box" role="aria-hidden">
+    <form action="javascript:void(0);" method="POST" id="save-edit">
+      <input type="text" id="edit-todo">
+      <input type="submit" value="Save" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+    </form>
+  </div>
+
+    
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="web.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+
+</body>
+</html>
